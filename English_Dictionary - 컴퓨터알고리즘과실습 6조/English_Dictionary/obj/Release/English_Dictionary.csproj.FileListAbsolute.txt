@@ -1,0 +1,9 @@
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\bin\Release\English_Dictionary.exe.config
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\bin\Release\English_Dictionary.exe
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\bin\Release\English_Dictionary.pdb
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.csprojResolveAssemblyReference.cache
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.MainForm.resources
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.Properties.Resources.resources
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.csproj.GenerateResource.Cache
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.exe
+D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.pdb
