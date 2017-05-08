@@ -13,32 +13,18 @@ namespace English_Dictionary.Algorithm
         public override QueryData Search(string searchQuery)
         {
             QueryData queryData = new QueryData();
+            compareCount = 0;
 
             for (int i = 0; i < reader.words.Length; i++)
             {
-                bool isFound = true;
-
-                for (int j = 0; j < Math.Max(reader.words[i].key.Length, searchQuery.Length); j++)
-                {
-                    ++queryData.compareCount;
-
-                    if (j >= reader.words[i].key.Length ||
-                        j >= searchQuery.Length ||
-                        searchQuery[j] != reader.words[i].key[j])
-                    {
-                        isFound = false;
-                        break;
-                    }
-                }
-
-                if (isFound)
+                if(StringCompare(searchQuery, reader.words[i].key, true) == SAME)
                 {
                     queryData.definition = reader.words[i].definition;
-                    return queryData;
+                    break;
                 }
             }
 
-            queryData.definition = null;
+            queryData.compareCount = compareCount;
             return queryData;
         }
     }

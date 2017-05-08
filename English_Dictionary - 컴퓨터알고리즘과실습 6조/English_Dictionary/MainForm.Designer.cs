@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.resultPanel = new System.Windows.Forms.Panel();
+            this.resultLabel = new System.Windows.Forms.Label();
             this.countPanel = new System.Windows.Forms.Panel();
+            this.countLabel = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
             this.infoLabel = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.resultLabel = new System.Windows.Forms.Label();
-            this.countLabel = new System.Windows.Forms.Label();
+            this.initProgressBar = new System.Windows.Forms.ProgressBar();
             this.resultPanel.SuspendLayout();
             this.countPanel.SuspendLayout();
             this.SuspendLayout();
@@ -44,46 +45,10 @@
             // 
             this.resultPanel.BackColor = System.Drawing.Color.SkyBlue;
             this.resultPanel.Controls.Add(this.resultLabel);
-            this.resultPanel.Location = new System.Drawing.Point(12, 103);
+            this.resultPanel.Location = new System.Drawing.Point(12, 106);
             this.resultPanel.Name = "resultPanel";
-            this.resultPanel.Size = new System.Drawing.Size(200, 210);
+            this.resultPanel.Size = new System.Drawing.Size(286, 375);
             this.resultPanel.TabIndex = 0;
-            // 
-            // countPanel
-            // 
-            this.countPanel.BackColor = System.Drawing.Color.Orchid;
-            this.countPanel.Controls.Add(this.countLabel);
-            this.countPanel.Location = new System.Drawing.Point(234, 103);
-            this.countPanel.Name = "countPanel";
-            this.countPanel.Size = new System.Drawing.Size(200, 210);
-            this.countPanel.TabIndex = 1;
-            // 
-            // searchButton
-            // 
-            this.searchButton.Location = new System.Drawing.Point(234, 56);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(200, 21);
-            this.searchButton.TabIndex = 2;
-            this.searchButton.Text = "검색";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
-            // 
-            // infoLabel
-            // 
-            this.infoLabel.AutoSize = true;
-            this.infoLabel.Font = new System.Drawing.Font("굴림", 12F);
-            this.infoLabel.Location = new System.Drawing.Point(12, 21);
-            this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(194, 16);
-            this.infoLabel.TabIndex = 3;
-            this.infoLabel.Text = "검색할 단어를 입력하세요";
-            // 
-            // searchTextBox
-            // 
-            this.searchTextBox.Location = new System.Drawing.Point(12, 56);
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(200, 21);
-            this.searchTextBox.TabIndex = 4;
             // 
             // resultLabel
             // 
@@ -95,6 +60,15 @@
             this.resultLabel.TabIndex = 0;
             this.resultLabel.Text = "한국어 뜻이 출력됩니다";
             // 
+            // countPanel
+            // 
+            this.countPanel.BackColor = System.Drawing.Color.Orchid;
+            this.countPanel.Controls.Add(this.countLabel);
+            this.countPanel.Location = new System.Drawing.Point(317, 106);
+            this.countPanel.Name = "countPanel";
+            this.countPanel.Size = new System.Drawing.Size(350, 375);
+            this.countPanel.TabIndex = 1;
+            // 
             // countLabel
             // 
             this.countLabel.AutoSize = true;
@@ -104,12 +78,47 @@
             this.countLabel.TabIndex = 0;
             this.countLabel.Text = "문자 비교 횟수가 출력됩니다";
             // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(317, 56);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(350, 21);
+            this.searchButton.TabIndex = 2;
+            this.searchButton.Text = "알고리즘 초기화";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // infoLabel
+            // 
+            this.infoLabel.AutoSize = true;
+            this.infoLabel.Font = new System.Drawing.Font("굴림", 12F);
+            this.infoLabel.Location = new System.Drawing.Point(12, 21);
+            this.infoLabel.Name = "infoLabel";
+            this.infoLabel.Size = new System.Drawing.Size(263, 16);
+            this.infoLabel.TabIndex = 3;
+            this.infoLabel.Text = "검색하기 전에 초기화를 해야합니다";
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Location = new System.Drawing.Point(12, 56);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(286, 21);
+            this.searchTextBox.TabIndex = 4;
+            // 
+            // initProgressBar
+            // 
+            this.initProgressBar.Location = new System.Drawing.Point(317, 14);
+            this.initProgressBar.Name = "initProgressBar";
+            this.initProgressBar.Size = new System.Drawing.Size(350, 23);
+            this.initProgressBar.TabIndex = 6;
+            // 
             // MainForm
             // 
             this.AcceptButton = this.searchButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 325);
+            this.ClientSize = new System.Drawing.Size(679, 493);
+            this.Controls.Add(this.initProgressBar);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.searchButton);
@@ -136,6 +145,7 @@
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Label resultLabel;
         private System.Windows.Forms.Label countLabel;
+        private System.Windows.Forms.ProgressBar initProgressBar;
     }
 }
 
