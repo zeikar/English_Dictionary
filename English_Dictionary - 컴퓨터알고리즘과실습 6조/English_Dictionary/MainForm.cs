@@ -13,7 +13,7 @@ namespace English_Dictionary
         bool initialized = false;
 
         AlgorithmWrapper[] algorithm;
-        const int ALGORITHM_NUM = 2;
+        const int ALGORITHM_NUM = 3;
         readonly string[] algorithmNames = { "Brute Force", "Binary Search Tree", "Red Black Tree", "Hashing" };
 
         public MainForm()
@@ -35,6 +35,8 @@ namespace English_Dictionary
             algorithm[0] = new BruteForce();
             // ----- 1. Binary Search Tree -----
             algorithm[1] = new BinarySearchTree();
+            // ----- 2. Red Black Tree -----
+            algorithm[2] = new RedBlackTree();
 
             for (int i = 0; i < ALGORITHM_NUM; i++)
             {
@@ -42,6 +44,7 @@ namespace English_Dictionary
                 algorithm[i].Init(reader);
                 initProgressBar.PerformStep();
             }
+            initProgressBar.Value = 100;
 
             infoLabel.Text = "검색할 단어를 입력하세요";
             searchButton.Text = "검색";
@@ -52,7 +55,12 @@ namespace English_Dictionary
         {
             if (initialized == false)
             {
+                // RELEASE
                 ThreadPool.QueueUserWorkItem(Init);
+
+                // DEBUG
+                //Init(null);
+
                 initialized = true;
                 return;
             }
@@ -66,19 +74,17 @@ namespace English_Dictionary
                 ret[i] = algorithm[i].Search(searchQuery);
             }
 
-            // 한국어 뜻 출력
-            if (ret[0].definition == null)
-            {
-                ret[0].definition = "해당하는 단어가 없습니다.";
-
-                MessageBox.Show("해당하는 단어가 없습니다.");
-            }
-            resultLabel.Text = ret[0].definition;
-
-            // 비교횟수 출력
+            // 출력
+            resultLabel.Text = "";
             countLabel.Text = "";
             for (int i = 0; i < ALGORITHM_NUM; i++)
             {
+                if (ret[i].definition == null)
+                {
+                    ret[i].definition = "해당하는 단어가 없습니다.";
+                }
+
+                resultLabel.Text += ret[i].definition + '\n';
                 countLabel.Text += algorithmNames[i] + " 문자 비교 횟수 : " + ret[i].compareCount + '\n';
             }
         }

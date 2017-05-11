@@ -54,11 +54,11 @@
             // 
             this.resultLabel.AutoSize = true;
             this.resultLabel.Location = new System.Drawing.Point(17, 21);
-            this.resultLabel.MaximumSize = new System.Drawing.Size(160, 0);
+            this.resultLabel.MaximumSize = new System.Drawing.Size(250, 0);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(133, 12);
+            this.resultLabel.Size = new System.Drawing.Size(137, 12);
             this.resultLabel.TabIndex = 0;
-            this.resultLabel.Text = "한국어 뜻이 출력됩니다";
+            this.resultLabel.Text = "한국어 뜻이 출력됩니다.";
             // 
             // countPanel
             // 

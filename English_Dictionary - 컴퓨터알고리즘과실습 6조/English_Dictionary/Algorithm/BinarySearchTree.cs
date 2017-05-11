@@ -24,11 +24,11 @@ namespace English_Dictionary.Algorithm
         {
             reader = rd;
 
-            header = new Node(new Word("A", "A"));
+            header = new Node(new Word("0", "0"));
 
             for (int i = 0; i < rd.words.Length; i++)
             {
-                Add(rd.words[i]);
+                Insert(rd.words[i]);
             }
         }
 
@@ -63,7 +63,7 @@ namespace English_Dictionary.Algorithm
             return queryData;
         }
         
-        private void Add(Word word)
+        private void Insert(Word word)
         {
             string insert = word.key;
 
