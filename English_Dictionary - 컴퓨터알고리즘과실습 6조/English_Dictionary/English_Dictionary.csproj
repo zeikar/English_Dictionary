@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithm\AlgorithmWrapper.cs" />
+    <Compile Include="Algorithm\BinarySearch.cs" />
     <Compile Include="Algorithm\BinarySearchTree.cs" />
     <Compile Include="Algorithm\BruteForce.cs" />
+    <Compile Include="Algorithm\Hashing.cs" />
     <Compile Include="Algorithm\QueryData.cs" />
     <Compile Include="Algorithm\RedBlackTree.cs" />
     <Compile Include="Dictionary_Reader\DictionaryReader.cs" />

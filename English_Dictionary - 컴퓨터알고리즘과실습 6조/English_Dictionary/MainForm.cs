@@ -13,8 +13,8 @@ namespace English_Dictionary
         bool initialized = false;
 
         AlgorithmWrapper[] algorithm;
-        const int ALGORITHM_NUM = 3;
-        readonly string[] algorithmNames = { "Brute Force", "Binary Search Tree", "Red Black Tree", "Hashing" };
+        const int ALGORITHM_NUM = 5;
+        readonly string[] algorithmNames = { "Brute Force", "Binary Search", "Binary Search Tree", "Red Black Tree", "Hashing" };
 
         public MainForm()
         {
@@ -33,10 +33,14 @@ namespace English_Dictionary
             algorithm = new AlgorithmWrapper[ALGORITHM_NUM];
             // ----- 0. Brute Force -----
             algorithm[0] = new BruteForce();
-            // ----- 1. Binary Search Tree -----
-            algorithm[1] = new BinarySearchTree();
-            // ----- 2. Red Black Tree -----
-            algorithm[2] = new RedBlackTree();
+            // ----- 1. Binary Search -----
+            algorithm[1] = new BinarySearch();
+            // ----- 2. Binary Search Tree -----
+            algorithm[2] = new BinarySearchTree();
+            // ----- 3. Red Black Tree -----
+            algorithm[3] = new RedBlackTree();
+            // ----- 4. Hashing -----
+            algorithm[4] = new Hashing();
 
             for (int i = 0; i < ALGORITHM_NUM; i++)
             {
@@ -84,8 +88,8 @@ namespace English_Dictionary
                     ret[i].definition = "해당하는 단어가 없습니다.";
                 }
 
-                resultLabel.Text += ret[i].definition + '\n';
-                countLabel.Text += algorithmNames[i] + " 문자 비교 횟수 : " + ret[i].compareCount + '\n';
+                resultLabel.Text += ret[i].definition + "\n\n";
+                countLabel.Text += algorithmNames[i] + " 문자 비교 횟수 : " + ret[i].compareCount + "\n\n";
             }
         }
     }

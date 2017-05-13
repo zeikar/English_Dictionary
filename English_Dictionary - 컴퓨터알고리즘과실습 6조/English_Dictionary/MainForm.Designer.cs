@@ -74,9 +74,9 @@
             this.countLabel.AutoSize = true;
             this.countLabel.Location = new System.Drawing.Point(16, 21);
             this.countLabel.Name = "countLabel";
-            this.countLabel.Size = new System.Drawing.Size(161, 12);
+            this.countLabel.Size = new System.Drawing.Size(165, 12);
             this.countLabel.TabIndex = 0;
-            this.countLabel.Text = "문자 비교 횟수가 출력됩니다";
+            this.countLabel.Text = "문자 비교 횟수가 출력됩니다.";
             // 
             // searchButton
             // 
@@ -126,7 +126,7 @@
             this.Controls.Add(this.resultPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "영한사전 by 6조";
+            this.Text = "영한사전 by 6조 (박현석, 이동은, 홍성욱) - 컴퓨터알고리즘과실습 팀프로젝트";
             this.resultPanel.ResumeLayout(false);
             this.resultPanel.PerformLayout();
             this.countPanel.ResumeLayout(false);
