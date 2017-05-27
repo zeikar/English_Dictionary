@@ -10,14 +10,11 @@ namespace English_Dictionary.Algorithm
         protected const int SAME = 0;
         protected const int LARGE = 1;
 
-        protected int StringCompare(string str1, string str2, bool isCountOn = false)
+        protected int StringCompare(string str1, string str2)
         {
             for (int i = 0; i < Math.Max(str1.Length, str2.Length); i++)
             {
-                if (isCountOn)
-                {
-                    ++compareCount;
-                }
+                ++compareCount;
 
                 // 길이가 다르면 더 긴 쪽이 큰 걸로 간주
                 if (i >= str1.Length || i >= str2.Length)
@@ -46,12 +43,12 @@ namespace English_Dictionary.Algorithm
         }
 
         // 비교 횟수 변수
-        protected int compareCount;
+        protected int compareCount, initCount;
 
         protected DictionaryReader reader;
 
         abstract public QueryData Search(string searchQuery);
 
-        abstract public void Init(DictionaryReader rd);
+        abstract public int Init(DictionaryReader rd);
     }
 }

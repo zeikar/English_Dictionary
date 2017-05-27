@@ -13,8 +13,8 @@ namespace English_Dictionary
         bool initialized = false;
 
         AlgorithmWrapper[] algorithm;
-        const int ALGORITHM_NUM = 5;
-        readonly string[] algorithmNames = { "Brute Force", "Binary Search", "Binary Search Tree", "Red Black Tree", "Hashing" };
+        const int ALGORITHM_NUM = 6;
+        readonly string[] algorithmNames = { "Brute Force", "Binary Search", "Binary Search Tree", "Red Black Tree", "Hashing", "Trie" };
 
         public MainForm()
         {
@@ -25,6 +25,7 @@ namespace English_Dictionary
         {
             searchButton.Enabled = false;
             infoLabel.Text = "초기화 중입니다...기다려 주세요";
+            countLabel.Text = "";
             initProgressBar.Step = 100 / ALGORITHM_NUM;
 
             reader = new DictionaryReader();
@@ -41,11 +42,13 @@ namespace English_Dictionary
             algorithm[3] = new RedBlackTree();
             // ----- 4. Hashing -----
             algorithm[4] = new Hashing();
+            // ----- 5. Trie -----
+            algorithm[5] = new Trie();
 
             for (int i = 0; i < ALGORITHM_NUM; i++)
             {
                 searchButton.Text = algorithmNames[i] + " 초기화 하는 중...잠시만 기다리세요...";
-                algorithm[i].Init(reader);
+                countLabel.Text += algorithmNames[i] + " 초기화 문자 비교 횟수 : " + algorithm[i].Init(reader) + "\n\n";
                 initProgressBar.PerformStep();
             }
             initProgressBar.Value = 100;

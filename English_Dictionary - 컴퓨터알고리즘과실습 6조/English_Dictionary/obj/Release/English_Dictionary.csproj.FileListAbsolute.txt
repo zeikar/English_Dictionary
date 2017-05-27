@@ -7,3 +7,12 @@ D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실
 D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.csproj.GenerateResource.Cache
 D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.exe
 D:\Zeikar\Zeikar's World 4\학교자료\2017\1학기\컴퓨터알고리즘과실습\프로젝트\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.pdb
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\bin\Release\English_Dictionary.exe.config
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.exe
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.pdb
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\bin\Release\English_Dictionary.exe
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\bin\Release\English_Dictionary.pdb
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.csprojResolveAssemblyReference.cache
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.MainForm.resources
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.Properties.Resources.resources
+C:\Users\Zeikar\Documents\GitHub\English_Dictionary\English_Dictionary - 컴퓨터알고리즘과실습 6조\English_Dictionary\obj\Release\English_Dictionary.csproj.GenerateResource.Cache

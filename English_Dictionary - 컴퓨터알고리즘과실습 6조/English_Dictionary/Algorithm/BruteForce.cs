@@ -5,9 +5,11 @@ namespace English_Dictionary.Algorithm
 {
     public class BruteForce : AlgorithmWrapper
     {
-        public override void Init(DictionaryReader rd)
+        public override int Init(DictionaryReader rd)
         {
             reader = rd;
+
+            return 0;
         }
 
         public override QueryData Search(string searchQuery)
@@ -17,7 +19,7 @@ namespace English_Dictionary.Algorithm
 
             for (int i = 0; i < reader.words.Length; i++)
             {
-                if(StringCompare(searchQuery, reader.words[i].key, true) == SAME)
+                if(StringCompare(searchQuery, reader.words[i].key) == SAME)
                 {
                     queryData.definition = reader.words[i].definition;
                     break;

@@ -31,7 +31,7 @@ namespace English_Dictionary.Algorithm
         Node header, dummy;
 
 
-        public override void Init(DictionaryReader rd)
+        public override int Init(DictionaryReader rd)
         {
             reader = rd;
 
@@ -46,6 +46,8 @@ namespace English_Dictionary.Algorithm
             {
                 Insert(rd.words[i]);
             }
+
+            return initCount = compareCount;
         }
 
         public override QueryData Search(string searchQuery)
@@ -58,7 +60,7 @@ namespace English_Dictionary.Algorithm
 
             while (ptr != dummy)
             {
-                int compare = StringCompare(searchQuery, ptr.word.key, true);
+                int compare = StringCompare(searchQuery, ptr.word.key);
 
                 if (compare == SAME)
                 {

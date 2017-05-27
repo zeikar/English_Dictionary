@@ -9,7 +9,7 @@ namespace English_Dictionary.Algorithm
         List<Word>[] hashTable;
         const int HASH_TABLE_SIZE = 10007;
 
-        public override void Init(DictionaryReader rd)
+        public override int Init(DictionaryReader rd)
         {
             reader = rd;
 
@@ -26,6 +26,8 @@ namespace English_Dictionary.Algorithm
 
                 hashTable[hash].Add(rd.words[i]);
             }
+
+            return 0;
         }
 
         public override QueryData Search(string searchQuery)
@@ -37,7 +39,7 @@ namespace English_Dictionary.Algorithm
 
             for (int i = 0; i < hashTable[hash].Count; i++)
             {
-                if (StringCompare(searchQuery, hashTable[hash][i].key, true) == SAME)
+                if (StringCompare(searchQuery, hashTable[hash][i].key) == SAME)
                 {
                     queryData.definition = hashTable[hash][i].definition;
                     break;
