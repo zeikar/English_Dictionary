@@ -62,11 +62,11 @@ namespace English_Dictionary.Algorithm
             }
             else if (ch == '!')
             {
-                return 54;
+                return 56;
             }
             else if (ch == '/')
             {
-                return 55;
+                return 57;
             }
             else
             {
